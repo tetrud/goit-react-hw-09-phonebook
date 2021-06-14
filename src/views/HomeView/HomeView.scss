@@ -1,0 +1,12 @@
+.Description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 17px;
+  color: rgb(181, 125, 255);
+
+  @media screen and (min-width: 530px) {
+    font-size: 20px;
+  }
+}

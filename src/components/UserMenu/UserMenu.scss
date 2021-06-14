@@ -1,0 +1,29 @@
+@import 'styles/shared.scss';
+
+.User {
+  display: flex;
+  align-items: center;
+
+  &__description {
+    margin: auto 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: #b57dff;
+    margin-right: 20px;
+
+    @media screen and (min-width: 530px) {
+      font-size: 17px;
+    }
+  }
+
+  &__button {
+    width: 80px;
+    padding: 5px;
+    font-size: 12px;
+    @extend %button;
+
+    @media screen and (min-width: 530px) {
+      font-size: 15px;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import 'styles/shared.scss';
+
+.ContactsList {
+  @extend %list;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 5px rgb(243, 235, 253);
+    transition: all 500ms linear;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 0px 10px 5px rgba(54, 0, 124, 0.2);
+    }
+  }
+
+  &__text {
+    width: 150px;
+    margin: 0;
+    font-size: 20px;
+    color: rgba(97, 97, 97, 0.7);
+    font-weight: 500;
+    text-transform: capitalize;
+
+    @media screen and (min-width: 530px) {
+      font-size: 24px;
+      width: 100%;
+    }
+  }
+
+  &__name {
+    font-size: 24px;
+    font-weight: 800;
+    color: $accent-color;
+
+    @media screen and (min-width: 530px) {
+      font-size: 27px;
+    }
+  }
+
+  &__button {
+    width: 80px;
+    padding: 10px;
+    font-size: 12px;
+
+    @extend %button;
+
+    @media screen and (min-width: 530px) {
+      width: 100px;
+      font-size: 15px;
+    }
+  }
+}
+
+.Headline {
+  font-size: 20px;
+  color: $accent-color;
+  text-align: center;
+}

@@ -1,0 +1,28 @@
+@import 'styles/shared.scss';
+
+.Filter__label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 17px;
+  color: rgb(181, 125, 255);
+
+  @media screen and (min-width: 530px) {
+    justify-content: center;
+    flex-direction: row;
+    font-size: 20px;
+  }
+}
+
+.Filter__input {
+  display: flex;
+  margin: 10px;
+  padding: 5px 20px;
+  border: 1px solid $accent-color;
+  outline: none;
+
+  @media screen and (min-width: 530px) {
+    margin: 0px 0px 0px 10px;
+  }
+}
